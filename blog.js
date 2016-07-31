@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.entry').each(function (index,div) {
         div = $(div);
-        var txt = div.text();
+        var txt = div.html();
         var title = div.attr('title');
         var locn = div.attr('location');
         var pix = div.attr('pix');
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     $('.blurb').each(function (index,div) {
         div = $(div);
-        var txt = div.text();
+        var txt = div.html();
         var title = div.attr('title');
         var pix = div.attr('pix');
         var url = div.attr('url');
