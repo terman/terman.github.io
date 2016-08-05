@@ -17,6 +17,46 @@ body {
     height: 100px;
     margin-right: 1em;
 }
+.slideshow {
+    width: 100%;
+    text-align: center;
+}
+.slideshow button {
+    font-size: larger;
+}
+.slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: black;
+    color: white;
+    display: none;
+    text-align: center;
+    tabindex: 0;
+    outline: none;
+}
+.close:after {
+    content: "\2297";
+    cursor: pointer;
+}
+.next:after {
+    content: "\25B6";
+    cursor: pointer;
+}
+.prev:after {
+    content: "\25C0";
+    cursor: pointer;
+}
+.caption {
+    clear: both;
+    text-align: left;
+}
+.pix {
+    display: block;
+}
 .page {
     display: inline-block;
     padding-left: 10px;
